@@ -8,6 +8,14 @@ Food.prototype.getPosition=function() {
   return this.position;
 }
 
+Food.prototype.getX = function(){
+  this.position.getX();
+}
+
+Food.prototype.getY = function(){
+  this.position.getY();
+}
+
 Food.prototype.getGrowthFactor=function() {
   return this.growthFactor;
 }

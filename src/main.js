@@ -70,6 +70,7 @@ const startGame=function() {
   drawFood(game.getFood());
   updateScore(game.getScore())
   addKeyListener();
+  changeSnakeDirection();
   animator=setInterval(animateSnake,100);
 }
 

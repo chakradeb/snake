@@ -10,6 +10,15 @@ Snake.prototype={
   getHead:function() {
     return this.head;
   },
+  getX: function() {
+    return this.head.getX();
+  },
+  getY: function() {
+    return this.head.getY();
+  },
+  getDirection: function(){
+    return this.head.getDirection();
+  },
   move:function() {
     this.body.push(this.head);
     this.head=this.head.next();
